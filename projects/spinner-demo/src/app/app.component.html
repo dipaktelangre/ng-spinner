@@ -1,0 +1,119 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <h2>Customizable spinners</h2>
+      <p>You can use any icon for spinner from Font Awesome</p>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-12 my-3">
+      <div class="spinner-demo p-1">
+        <div class="row">
+          <div class="col">
+            <button
+              class="btn btn-primary mx-1"
+              (click)="toggleSpinner(spinnerSetting2)"
+            >
+              {{ spinnerSetting2.show ? "Hide" : "Show" }}
+            </button>
+            <button class="btn btn-primary mx-1" (click)="toggleFullscreen()">
+              Fullscreen
+            </button>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col">
+            <div class="spinner-box">
+              <ng-spinner [settings]="spinnerSetting2">
+                I am loading as per your customization. YOu can use any message
+                here.
+              </ng-spinner>
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Country</th>
+                    <th scope="col">Area</th>
+                    <th scope="col">Population</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let country of countries; index as i">
+                    <th scope="row">{{ i + 1 }}</th>
+                    <td>
+                      <img
+                        [src]="
+                          'https://upload.wikimedia.org/wikipedia/commons/' +
+                          country.flag
+                        "
+                        class="mr-2"
+                        style="width: 20px"
+                      />
+                      {{ country.name }}
+                    </td>
+                    <td>{{ country.area | number }}</td>
+                    <td>{{ country.population | number }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 my-3">
+      <div class="spinner-demo p-1">
+        <div class="row">
+          <div class="col">
+            <button
+              class="btn btn-primary mx-1"
+              (click)="toggleSpinner(spinnerSetting)"
+            >
+              {{ spinnerSetting.show ? "Hide" : "Show" }}
+            </button>
+            <button class="btn btn-primary mx-1" (click)="toggleFullscreen()">
+              Fullscreen
+            </button>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col">
+            <div class="spinner-box">
+              <ng-spinner [settings]="spinnerSetting">
+                Default loader ...
+              </ng-spinner>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 my-3">
+      <div class="spinner-demo p-1">
+        <div class="row">
+          <div class="col">
+            <button
+              class="btn btn-primary mx-1"
+              (click)="toggleSpinner(spinnerSetting1)"
+            >
+              {{ spinnerSetting1.show ? "Hide" : "Show" }}
+            </button>
+            <button class="btn btn-primary mx-1" (click)="toggleFullscreen()">
+              Fullscreen
+            </button>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col">
+            <div class="spinner-box">
+              <ng-spinner [settings]="spinnerSetting1">
+                Slash loader looks good !!
+              </ng-spinner>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
