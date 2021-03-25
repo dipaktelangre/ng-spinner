@@ -1,0 +1,26 @@
+<div
+  class="d-flex justify-content-center spinner-overlay"
+  *ngIf="options.show"
+  [style.position]="options.fullscreen ? 'fixed' : absolute"
+  [style.background-color]="options.bgColor"
+>
+  <div class="spinner align-self-center" [style.color]="options.spinnerColor">
+    <i
+      class="{{
+        getIconClass(
+          options.spinnerStyle,
+          options.spinnerIcon,
+          options.spinnerSize
+        )
+      }}"
+    ></i>
+  </div>
+  <div
+    class="spinner-text align-self-center p-3 text-break {{
+      options.spinnerSize
+    }}"
+    [style.color]="options.textColor"
+  >
+    <ng-content></ng-content>
+  </div>
+</div>

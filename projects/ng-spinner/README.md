@@ -17,10 +17,6 @@ Its depends Bootstrap and Font Awesome
 - `show()/hide()` methods
 - Dynamic `z-index`
 
-## Build/Run
-
-`npm start`
-
 ## Demo
 
 Check demo project
@@ -45,7 +41,10 @@ import { NgModule } from "@angular/core";
 import { NgSpinnerModule } from "ng-spinner";
 
 @NgModule({
-  imports: [NgSpinnerModule],
+  imports: [
+    // ...
+    NgxSpinnerModule,
+  ],
   schemas: [],
 })
 export class AppModule {}
@@ -81,7 +80,7 @@ See [Demo](#demo)
 
 ## Methods
 
-- `NgpinnerService.show(name)` Shows the spinner
+- `NgxpinnerService.show(name)` Shows the spinner
 - `NgSpinnerService.hide(name)` Hides the spinner
 
 ## Available Settings
@@ -151,4 +150,4 @@ this.spinner.show("spinner1");
 
 ### License
 
-@dk/ng-spinner is [MIT licensed](./LICENSE).
+ngx-spinner is [MIT licensed](./LICENSE).
