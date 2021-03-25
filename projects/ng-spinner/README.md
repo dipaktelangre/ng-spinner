@@ -17,18 +17,22 @@ Its depends Bootstrap and Font Awesome
 - `show()/hide()` methods
 - Dynamic `z-index`
 
+## Build/Run
+
+`npm start`
+
 ## Demo
 
 Check demo project
 
 ## Installation
 
-`ng-spinner` is available via [npm](https://www.npmjs.com/package/@dk/ng-spinner)
+`ng-spinner` is available via [npm](https://www.npmjs.com/package/@dipaktelangre/ng-spinner)
 
 Using npm:
 
 ```bash
-$ npm install @dk/ng-spinner --save
+$ npm install @dipaktelangre/ng-spinner --save
 ```
 
 ## Usage
@@ -41,10 +45,7 @@ import { NgModule } from "@angular/core";
 import { NgSpinnerModule } from "ng-spinner";
 
 @NgModule({
-  imports: [
-    // ...
-    NgxSpinnerModule,
-  ],
+  imports: [NgSpinnerModule],
   schemas: [],
 })
 export class AppModule {}
@@ -80,7 +81,7 @@ See [Demo](#demo)
 
 ## Methods
 
-- `NgxpinnerService.show(name)` Shows the spinner
+- `NgSpinnerService.show(name)` Shows the spinner
 - `NgSpinnerService.hide(name)` Hides the spinner
 
 ## Available Settings
@@ -150,4 +151,4 @@ this.spinner.show("spinner1");
 
 ### License
 
-ngx-spinner is [MIT licensed](./LICENSE).
+@dipaktelangre/ng-spinner is [MIT licensed](./LICENSE).

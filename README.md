@@ -27,12 +27,12 @@ Check demo project
 
 ## Installation
 
-`ng-spinner` is available via [npm](https://www.npmjs.com/package/@dk/ng-spinner)
+`ng-spinner` is available via [npm](https://www.npmjs.com/package/@dipaktelangre/ng-spinner)
 
 Using npm:
 
 ```bash
-$ npm install @dk/ng-spinner --save
+$ npm install @dipaktelangre/ng-spinner --save
 ```
 
 ## Usage
@@ -151,4 +151,4 @@ this.spinner.show("spinner1");
 
 ### License
 
-@dk/ng-spinner is [MIT licensed](./LICENSE).
+@dipaktelangre/ng-spinner is [MIT licensed](./LICENSE).

@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgSpinnerModule } from '@dk/ng-spinner';
+import { NgSpinnerModule } from '@dipaktelangre/ng-spinner';
 
 @NgModule({
   declarations: [AppComponent],

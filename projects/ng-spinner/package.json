@@ -1,6 +1,7 @@
 {
-  "name": "@dk/ng-spinner",
+  "name": "@dipaktelangre/ng-spinner",
   "version": "10.0.0",
+  "private": false,
   "peerDependencies": {
     "@angular/common": "^10.0.4",
     "@angular/core": "^10.0.4",

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgSpinnerService, NgSpinnerSettings } from '@dk/ng-spinner';
+import { NgSpinnerService, NgSpinnerSettings } from '@dipaktelangre/ng-spinner';
 
 interface Country {
   name: string;
