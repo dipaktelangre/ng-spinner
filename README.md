@@ -81,7 +81,7 @@ See [Demo](#demo)
 
 ## Methods
 
-- `NgpinnerService.show(name)` Shows the spinner
+- `NgSpinnerService.show(name)` Shows the spinner
 - `NgSpinnerService.hide(name)` Hides the spinner
 
 ## Available Settings
