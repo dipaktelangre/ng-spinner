@@ -25,6 +25,10 @@ Its depends Bootstrap and Font Awesome
 
 Check demo project
 
+## Complete tutorial how to build spinner from scratch
+
+[![Angular spinner example](http://img.youtube.com/vi/slsK2wXUah0/0.jpg)](http://www.youtube.com/watch?v=slsK2wXUah0 "Angular create spinner component full tutorial")
+
 ## Installation
 
 `ng-spinner` is available via [npm](https://www.npmjs.com/package/@dipaktelangre/ng-spinner)
