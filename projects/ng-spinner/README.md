@@ -6,7 +6,24 @@ You can use thousands spinner icons from Font Awesome !!!
 
 ## Dependencies
 
-Its depends Bootstrap and Font Awesome
+Its depends Bootstrap and Font Awesome. So before you start please install bootstrap and font-awesome-free / font-awesome-pro if not installed.
+
+```
+$ npm install --save bootstrap @fortawesome/fontawesome-free
+```
+
+import bootstrap and font-awesome style to application
+
+```
+//style.scss
+
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/scss/bootstrap.scss";
+@import "@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "@fortawesome/fontawesome-free/scss/solid.scss";
+@import "@fortawesome/fontawesome-free/scss/regular.scss";
+```
 
 ## Features
 
